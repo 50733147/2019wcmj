@@ -78,50 +78,26 @@ $(document).ready(doSearch);
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='孫冠豪的網際內容管理期末報告.html'>孫冠豪的網際內容管理期末報告</a><li><a href='ROC標誌.html'>ROC標誌</a></li></ul></nav><section><div id="tipue_search_content"> <a href='ROC標誌.html'>Next</a> >> ROC標誌<br /><h1>孫冠豪的網際內容管理期末報告</h1>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">內容1:上了這一學期我學到了如何處理網路連線的簡單問題也知道了學習之三大要素為:學思 用</span></span></p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">在這堂課程中我也學習到了許多英文單字</span></span></p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">學習到了如何打指令到電腦中 用cmd命令提示字元</span></span></p>
-<p>學習到了如何用shareX拍照:按CTRL+Print scr  拍影片:按shift+Print scr </p>
-<p>學習到了如何建立ssh的資料夾</p>
-<p>也學習到了如何編輯網站內容例如現在我在做得事情</p>
-<p>學習到了如何放上我國的國家精神國旗</p>
-<p>以下是這學期所學的所有內容照片</p>
-<p><img caption="false" height="297" src="./../images/53HFr4Ptl5.png" width="600"/></p>
-<p><img alt="" height="293" src="./../images/chrome_6wT0QZBuU9.png" width="600"/></p>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='孫冠豪的網際內容管理期末報告.html'>孫冠豪的網際內容管理期末報告</a><li><a href='ROC標誌.html'>ROC標誌</a></li></ul></nav><section><div id="tipue_search_content">孫冠豪的網際內容管理期末報告 << <a href='孫冠豪的網際內容管理期末報告.html'>Previous</a> <br /><h1>ROC標誌</h1>
+<!-- 導入 Brython 標準程式庫 -->
+<script src="/get_page/cmsimde/static/brython.js"></script>
+<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
 <p></p>
-<p></p>
-<p><img alt="" height="293" src="./../images/chrome_44AJwIuHOy.png" width="600"/> </p>
-<p><img alt="" height="293" src="./../images/chrome_kp1ghcX0IJ.png" width="600"/></p>
-<p><img alt="" height="293" src="./../images/chrome_PPfP5eQlji.png" width="600"/></p>
-<p> </p>
-<p><img alt="" height="293" src="./../images/chrome_prVe7q3omb.png" width="600"/></p>
-<p><img caption="false" height="507" src="./../images/explorer_itYqmEu8gf.png" width="600"/></p>
-<p><img alt="" height="512" src="./../images/explorer_5V1cQPA7jS.png" width="421"/> </p>
-<p><img alt="" height="533" src="./../images/dllhost_i5bQiFXdvm.png" width="421"/></p>
-<p><img alt="" height="507" src="./../images/explorer_itYqmEu8gf.png" width="600"/></p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></p>
-<p><a href='/&lt;iframe%20width="560" height="315" src="https:/www.youtube.com/embed/pypAmDkxEDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;'><!-- for Brython -->
-<script src="/cmsimde/static/brython.js"></script>
-<script src="/cmsimde/static/brython_stdlib.js"></script>
-<!-- 啟動 brython() --></a></p>
-<p><a href='/&lt;iframe%20width="560" height="315" src="https:/www.youtube.com/embed/pypAmDkxEDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;'>
+<!-- 啟動 Brython -->
 <script>// <![CDATA[
 window.onload=function(){
-brython(1);
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
 }
 // ]]></script>
-</a></p>
-<p><a href='/&lt;iframe%20width="560" height="315" src="https:/www.youtube.com/embed/pypAmDkxEDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;'><!-- 以下利用 Brython 程式執行繪圖 --></a></p>
-<p><a href='/&lt;iframe%20width="560" height="315" src="https:/www.youtube.com/embed/pypAmDkxEDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;'><canvas height="400" id="taiwan_flag" width="600"></canvas></a></p>
-<p>
-<script type="text/python3">// <![CDATA[
+<p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<script type="text/python">// <![CDATA[
 # 導入 doc
 from browser import document as doc
 import math
-  
+
 # 準備繪圖畫布
-canvas = doc["taiwan_flag"]
+canvas = doc["plotarea"]
 ctx = canvas.getContext("2d")
 # 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
 # ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
@@ -168,5 +144,43 @@ ctx.closePath()
 ctx.fillStyle = '#fff'
 ctx.fill()
 // ]]></script>
-</p>
-<br /> <a href='ROC標誌.html'>Next</a> >> ROC標誌</div></section></div></body></html>
+<p><br/>繪圖 &lt;&lt; <a href="/get_page/ROC%E6%A8%99%E8%AA%8C/繪圖.html">Previous</a> <a href="/get_page/ROC%E6%A8%99%E8%AA%8C/Spur Gears.html">Next</a> &gt;&gt; Spur Gears</p>
+<!-- footer -->
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright ©
+<script>// <![CDATA[
+document.write(new Date().getFullYear());
+// ]]></script>
+All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+<!-- for footer -->
+<p></p>
+<!-- for site wrap -->
+<p></p>
+<!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+<script src="/get_page/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery-ui.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/popper.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/aos.js"></script>
+<p>&lt;!--</p>
+<script src="/get_page/cmsimde/static/chimper/js/typed.js"></script>
+<script>// <![CDATA[
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    
+// ]]></script><br />孫冠豪的網際內容管理期末報告 << <a href='孫冠豪的網際內容管理期末報告.html'>Previous</a> </div></section></div></body></html>
