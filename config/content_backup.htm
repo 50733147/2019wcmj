@@ -1,10 +1,12 @@
-<h1><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">孫冠豪的網際內容管理期末報告</span></span></h1>
+<h1>孫冠豪的網際內容管理期末報告</h1>
 <p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">內容1:上了這一學期我學到了如何處理網路連線的簡單問題也知道了學習之三大要素為:學思 用</span></span></p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">在這堂課程中我也學習到了許多英文單字</span></span></p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">學習到了如何打指令到電腦中 用cmd命令提示字元</span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span>在這堂課程中我已經學習到了如何在自己的隨身碟建立隨身程式系統</span><br/></span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span>了解 git 以 https 連線時, proxy 將採用那一個檔案中的設定</span></span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span> 學會如何採用 ssh 模式維護 github 上的倉儲<br/></span></span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">學習到了如何打指令到電腦中例如: 用cmd命令提示字元</span></span></p>
 <p>學習到了如何用shareX拍照:按CTRL+Print scr  拍影片:按shift+Print scr </p>
-<p>學習到了如何建立ssh的資料夾</p>
-<p>也學習到了如何編輯網站內容例如現在我在做得事情</p>
+<p>學習到了<span>在 CMSimfly 中上傳檔案, 引用檔案</span><span>上傳圖檔, 引用圖檔 </span><span>嵌入 Youtube 影片</span></p>
+<p>也學習到了如何編輯網站內容</p>
 <p>學習到了如何放上我國的國家精神國旗</p>
 <p>以下是這學期所學的所有內容照片</p>
 <p><img caption="false" height="297" src="/images/53HFr4Ptl5.png" width="600"/></p>
@@ -34,73 +36,29 @@ brython(1);
 </a></p>
 <p><a href='/&lt;iframe%20width="560" height="315" src="https:/www.youtube.com/embed/pypAmDkxEDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;'><!-- 以下利用 Brython 程式執行繪圖 --></a></p>
 <p><a href='/&lt;iframe%20width="560" height="315" src="https:/www.youtube.com/embed/pypAmDkxEDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;'><canvas height="400" id="taiwan_flag" width="600"></canvas></a></p>
-<p>
-<script type="text/python3">// <![CDATA[
-# 導入 doc
-from browser import document as doc
-import math
-  
-# 準備繪圖畫布
-canvas = doc["taiwan_flag"]
-ctx = canvas.getContext("2d")
-# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
-# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
-# 以下採用 canvas 原始座標繪圖
-flag_w = canvas.width
-flag_h = canvas.height
-circle_x = flag_w/4
-circle_y = flag_h/4
-# 先畫滿地紅
-ctx.fillStyle='rgb(255, 0, 0)'
-ctx.fillRect(0,0,flag_w,flag_h)
-# 再畫青天
-ctx.fillStyle='rgb(0, 0, 150)'
-ctx.fillRect(0,0,flag_w/2,flag_h/2)
-# 畫十二道光芒白日
-ctx.beginPath()
-star_radius = flag_w/8
-angle = 0
-for i in range(24):
-    angle += 5*math.pi*2/12
-    toX = circle_x + math.cos(angle)*star_radius
-    toY = circle_y + math.sin(angle)*star_radius
-    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
-    if (i):
-        ctx.lineTo(toX, toY)
-    else:
-        ctx.moveTo(toX, toY)
-ctx.closePath()
-# 將填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-# 白日:藍圈
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為藍色
-ctx.fillStyle = 'rgb(0, 0, 149)'
-ctx.fill()
-# 白日:白心
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-// ]]></script>
-</p>
-<h1><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">ROC標誌</span></span></h1>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/pypAmDkxEDY" width="560"></iframe></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/rZ1A6WXAEik" width="560"></iframe></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/MqEqoKmuEsQ" width="560"></iframe></p>
+<h1>ROC標誌</h1>
+<p><img alt="" height="397" src="/images/chrome_FjxvadjlbP.png" width="600"/></p>
+<p><img alt="" height="398" src="/images/chrome_QoWaIgqTmi.png" width="600"/></p>
+<!-- for Brython -->
+<script src="/get_page/cmsimde/static/brython.js"></script>
+<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<!-- 啟動 brython() -->
+<p></p>
+<!-- 導入 Brython 標準程式庫 -->
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+<p></p>
 <!-- 啟動 Brython -->
-<p>
 <script>// <![CDATA[
 window.onload=function(){
 // 設定 data/py 為共用程式路徑
 brython({debug:1, pythonpath:['./../data/py']});
 }
 // ]]></script>
-</p>
 <p><canvas height="400" id="plotarea" width="600"></canvas></p>
-<p>
 <script type="text/python">// <![CDATA[
 # 導入 doc
 from browser import document as doc
@@ -109,49 +67,443 @@ import math
 # 準備繪圖畫布
 canvas = doc["plotarea"]
 ctx = canvas.getContext("2d")
+def blueWhite(ctx, x, y, flag_w, flag_h):
+    # 再畫青天
+    ctx.fillStyle='rgb(0, 0, 150)'
+    #ctx.fillRect(x-flag_w/4, y-flag_h/4, flag_w/2, flag_h/2)
+    ctx.fillRect(x-flag_w/2, 0, flag_w/2, flag_h)
+    # 畫十二道光芒白日
+    ctx.beginPath()
+    star_radius = flag_w/8
+    angle = 0
+    for i in range(24):
+        angle += 5*math.pi*2/12
+        toX = x + math.cos(angle)*star_radius
+        toY = y + math.sin(angle)*star_radius
+        # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+        if (i):
+            ctx.lineTo(toX, toY)
+        else:
+            ctx.moveTo(toX, toY)
+    ctx.closePath()
+    # 將填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+    # 白日:藍圈
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w*17/240, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為藍色
+    ctx.fillStyle = 'rgb(0, 0, 149)'
+    ctx.fill()
+    # 白日:白心
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w/16, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
 # 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
 # ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
 # 以下採用 canvas 原始座標繪圖
 flag_w = canvas.width
 flag_h = canvas.height
-circle_x = flag_w/4
-circle_y = flag_h/4
+circle_x = flag_w/2
+circle_y = flag_h/2
 # 先畫滿地紅
 ctx.fillStyle='rgb(255, 0, 0)'
 ctx.fillRect(0,0,flag_w,flag_h)
-# 再畫青天
-ctx.fillStyle='rgb(0, 0, 150)'
-ctx.fillRect(0,0,flag_w/2,flag_h/2)
-# 畫十二道光芒白日
-ctx.beginPath()
-star_radius = flag_w/8
-angle = 0
-for i in range(24):
-    angle += 5*math.pi*2/12
-    toX = circle_x + math.cos(angle)*star_radius
-    toY = circle_y + math.sin(angle)*star_radius
-    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
-    if (i):
-        ctx.lineTo(toX, toY)
-    else:
-        ctx.moveTo(toX, toY)
-ctx.closePath()
-# 將填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-# 白日:藍圈
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為藍色
-ctx.fillStyle = 'rgb(0, 0, 149)'
-ctx.fill()
-# 白日:白心
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
+blueWhite(ctx, circle_x, circle_y, flag_w, flag_h)
 // ]]></script>
-</p>
+<p><img alt="" height="397" src="/images/chrome_FjxvadjlbP.png" width="600"/></p>
+<p><img alt="" height="398" src="/images/chrome_QoWaIgqTmi.png" width="600"/></p>
+<!-- for Brython -->
+<script src="/get_page/cmsimde/static/brython.js"></script>
+<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<!-- 啟動 brython() -->
+<p></p>
+<!-- 導入 Brython 標準程式庫 -->
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+<p></p>
+<!-- 啟動 Brython -->
+<script>// <![CDATA[
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+// ]]></script>
+<p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<script type="text/python">// <![CDATA[
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+def blueWhite(ctx, x, y, flag_w, flag_h):
+    # 再畫青天
+    ctx.fillStyle='rgb(0, 0, 150)'
+    #ctx.fillRect(x-flag_w/4, y-flag_h/4, flag_w/2, flag_h/2)
+    ctx.fillRect(x-flag_w/2, 0, flag_w/2, flag_h)
+    # 畫十二道光芒白日
+    ctx.beginPath()
+    star_radius = flag_w/8
+    angle = 0
+    for i in range(24):
+        angle += 5*math.pi*2/12
+        toX = x + math.cos(angle)*star_radius
+        toY = y + math.sin(angle)*star_radius
+        # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+        if (i):
+            ctx.lineTo(toX, toY)
+        else:
+            ctx.moveTo(toX, toY)
+    ctx.closePath()
+    # 將填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+    # 白日:藍圈
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w*17/240, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為藍色
+    ctx.fillStyle = 'rgb(0, 0, 149)'
+    ctx.fill()
+    # 白日:白心
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w/16, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/2
+circle_y = flag_h/2
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+blueWhite(ctx, circle_x, circle_y, flag_w, flag_h)
+// ]]></script>
+<p><img alt="" height="397" src="/images/chrome_FjxvadjlbP.png" width="600"/></p>
+<p><img alt="" height="398" src="/images/chrome_QoWaIgqTmi.png" width="600"/></p>
+<!-- for Brython -->
+<script src="/get_page/cmsimde/static/brython.js"></script>
+<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<!-- 啟動 brython() -->
+<p></p>
+<!-- 導入 Brython 標準程式庫 -->
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+<p></p>
+<!-- 啟動 Brython -->
+<script>// <![CDATA[
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+// ]]></script>
+<p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<script type="text/python">// <![CDATA[
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+def blueWhite(ctx, x, y, flag_w, flag_h):
+    # 再畫青天
+    ctx.fillStyle='rgb(0, 0, 150)'
+    #ctx.fillRect(x-flag_w/4, y-flag_h/4, flag_w/2, flag_h/2)
+    ctx.fillRect(x-flag_w/2, 0, flag_w/2, flag_h)
+    # 畫十二道光芒白日
+    ctx.beginPath()
+    star_radius = flag_w/8
+    angle = 0
+    for i in range(24):
+        angle += 5*math.pi*2/12
+        toX = x + math.cos(angle)*star_radius
+        toY = y + math.sin(angle)*star_radius
+        # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+        if (i):
+            ctx.lineTo(toX, toY)
+        else:
+            ctx.moveTo(toX, toY)
+    ctx.closePath()
+    # 將填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+    # 白日:藍圈
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w*17/240, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為藍色
+    ctx.fillStyle = 'rgb(0, 0, 149)'
+    ctx.fill()
+    # 白日:白心
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w/16, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/2
+circle_y = flag_h/2
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+blueWhite(ctx, circle_x, circle_y, flag_w, flag_h)
+// ]]></script>
+<p><img alt="" height="397" src="/images/chrome_FjxvadjlbP.png" width="600"/></p>
+<p><img alt="" height="398" src="/images/chrome_QoWaIgqTmi.png" width="600"/></p>
+<!-- for Brython -->
+<script src="/get_page/cmsimde/static/brython.js"></script>
+<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<!-- 啟動 brython() -->
+<p></p>
+<!-- 導入 Brython 標準程式庫 -->
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+<p></p>
+<!-- 啟動 Brython -->
+<script>// <![CDATA[
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+// ]]></script>
+<p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<script type="text/python">// <![CDATA[
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+def blueWhite(ctx, x, y, flag_w, flag_h):
+    # 再畫青天
+    ctx.fillStyle='rgb(0, 0, 150)'
+    #ctx.fillRect(x-flag_w/4, y-flag_h/4, flag_w/2, flag_h/2)
+    ctx.fillRect(x-flag_w/2, 0, flag_w/2, flag_h)
+    # 畫十二道光芒白日
+    ctx.beginPath()
+    star_radius = flag_w/8
+    angle = 0
+    for i in range(24):
+        angle += 5*math.pi*2/12
+        toX = x + math.cos(angle)*star_radius
+        toY = y + math.sin(angle)*star_radius
+        # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+        if (i):
+            ctx.lineTo(toX, toY)
+        else:
+            ctx.moveTo(toX, toY)
+    ctx.closePath()
+    # 將填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+    # 白日:藍圈
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w*17/240, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為藍色
+    ctx.fillStyle = 'rgb(0, 0, 149)'
+    ctx.fill()
+    # 白日:白心
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w/16, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/2
+circle_y = flag_h/2
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+blueWhite(ctx, circle_x, circle_y, flag_w, flag_h)
+// ]]></script>
+<p><img alt="" height="397" src="/images/chrome_FjxvadjlbP.png" width="600"/></p>
+<p><img alt="" height="398" src="/images/chrome_QoWaIgqTmi.png" width="600"/></p>
+<!-- for Brython -->
+<script src="/get_page/cmsimde/static/brython.js"></script>
+<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<!-- 啟動 brython() -->
+<p></p>
+<!-- 導入 Brython 標準程式庫 -->
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+<p></p>
+<!-- 啟動 Brython -->
+<script>// <![CDATA[
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+// ]]></script>
+<p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<script type="text/python">// <![CDATA[
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+def blueWhite(ctx, x, y, flag_w, flag_h):
+    # 再畫青天
+    ctx.fillStyle='rgb(0, 0, 150)'
+    #ctx.fillRect(x-flag_w/4, y-flag_h/4, flag_w/2, flag_h/2)
+    ctx.fillRect(x-flag_w/2, 0, flag_w/2, flag_h)
+    # 畫十二道光芒白日
+    ctx.beginPath()
+    star_radius = flag_w/8
+    angle = 0
+    for i in range(24):
+        angle += 5*math.pi*2/12
+        toX = x + math.cos(angle)*star_radius
+        toY = y + math.sin(angle)*star_radius
+        # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+        if (i):
+            ctx.lineTo(toX, toY)
+        else:
+            ctx.moveTo(toX, toY)
+    ctx.closePath()
+    # 將填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+    # 白日:藍圈
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w*17/240, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為藍色
+    ctx.fillStyle = 'rgb(0, 0, 149)'
+    ctx.fill()
+    # 白日:白心
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w/16, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/2
+circle_y = flag_h/2
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+blueWhite(ctx, circle_x, circle_y, flag_w, flag_h)
+// ]]></script>
+<p><img alt="" height="397" src="/images/chrome_FjxvadjlbP.png" width="600"/></p>
+<p><img alt="" height="398" src="/images/chrome_QoWaIgqTmi.png" width="600"/></p>
+<!-- for Brython -->
+<script src="/get_page/cmsimde/static/brython.js"></script>
+<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<!-- 啟動 brython() -->
+<p></p>
+<!-- 導入 Brython 標準程式庫 -->
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+<p></p>
+<!-- 啟動 Brython -->
+<script>// <![CDATA[
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+// ]]></script>
+<p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<script type="text/python">// <![CDATA[
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+def blueWhite(ctx, x, y, flag_w, flag_h):
+    # 再畫青天
+    ctx.fillStyle='rgb(0, 0, 150)'
+    #ctx.fillRect(x-flag_w/4, y-flag_h/4, flag_w/2, flag_h/2)
+    ctx.fillRect(x-flag_w/2, 0, flag_w/2, flag_h)
+    # 畫十二道光芒白日
+    ctx.beginPath()
+    star_radius = flag_w/8
+    angle = 0
+    for i in range(24):
+        angle += 5*math.pi*2/12
+        toX = x + math.cos(angle)*star_radius
+        toY = y + math.sin(angle)*star_radius
+        # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+        if (i):
+            ctx.lineTo(toX, toY)
+        else:
+            ctx.moveTo(toX, toY)
+    ctx.closePath()
+    # 將填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+    # 白日:藍圈
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w*17/240, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為藍色
+    ctx.fillStyle = 'rgb(0, 0, 149)'
+    ctx.fill()
+    # 白日:白心
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w/16, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/2
+circle_y = flag_h/2
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+blueWhite(ctx, circle_x, circle_y, flag_w, flag_h)
+// ]]></script>
+<h1>學校的資源下載</h1>
+<p>以下是學校資源的下載專區的過程</p>
+<p><img alt="" height="293" src="/images/chrome_VMgiFLKWYj.png" width="600"/></p>
+<p><img alt="" height="407" src="/images/chrome_t1plLWrFAg.png" width="600"/></p>
+<p><img alt="" height="293" src="/images/chrome_nyIOPHGrmY.png" width="600"/></p>
+<p><img alt="" height="293" src="/images/chrome_2m3mHb5tKp.png" width="600"/></p>
+<p><img alt="" height="293" src="/images/chrome_5Sgbx1mVc8.png" width="600"/></p>
+<h1>proxy設定</h1>
+<p>以下是網路proxy的設定方式 圖片檔</p>
+<p><img alt="" height="325" src="/images/ApplicationFrameHost_wQEjAXjtoc.png" width="600"/></p>
+<p><img alt="" height="325" src="/images/ApplicationFrameHost_C3kXHsB8sE.png" width="600"/></p>
+<p><img alt="" height="293" src="/images/chrome_KJexRoudAN.png" width="600"/></p>
+<p><img alt="" height="293" src="/images/chrome_7cp9OV8bCn.png" width="600"/></p>
+<p><img alt="" height="325" src="/images/chrome_I1PKMhtYRX.png" width="600"/></p>
+<h1>W15虎科大VPN</h1>
+<p><img alt="" height="496" src="/images/chrome_WWOkqbGb5w.png" width="600"/></p>
+<p><img alt="" height="608" src="/images/chrome_URHmGJQ07m.png" width="600"/></p>
